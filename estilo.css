@@ -1,0 +1,1046 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+*:focus {
+  outline: none;
+}
+
+@font-face {
+  src: url(fonts/gotham-black.otf);
+  font-family: g-black;
+}
+
+@font-face {
+  src: url(fonts/gotham-bold.otf);
+  font-family: g-bold;
+}
+
+@font-face {
+  src: url(fonts/gotham-book.otf);
+  font-family: g-book;
+}
+
+@font-face {
+  src: url(fonts/gotham-light.otf);
+  font-family: g-light;
+}
+
+@font-face {
+  src: url(fonts/gotham-ultra.otf);
+  font-family: g-ultra;
+}
+
+@font-face {
+  src: url(fonts/gotham-medium.otf);
+  font-family: g-medium;
+}
+
+@font-face {
+  src: url(fonts/blacksword.otf);
+  font-family: blacksword;
+}
+
+@font-face {
+  src: url(fonts/roboto-condensed.ttf);
+  font-family: r-condensed;
+}
+
+@font-face {
+  src: url(fonts/heavy.otf);
+  font-family: heavy;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  background: #1B5A7D;
+  text-align: right;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+}
+
+#menuMovil {
+  display: none;
+}
+
+#menu-sliders {
+  width: 40%;
+  display: inline-block;
+  position: relative;
+}
+
+.menu-contender {
+  width: auto;
+  position: absolute;
+  top: 0;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 65px;
+}
+
+.menu-nav {
+  list-style: none;
+  padding: 0;
+  position: relative;
+  margin-top: 40px;
+  height: 40px;
+}
+
+.menu-nav li {
+  color: #FFF;
+  float: left;
+  font-family: g-medium;
+  cursor: pointer;
+}
+
+.menu-nav li:hover {
+  font-family: g-bold;
+  color: #92D30B !important;
+}
+
+.border-nav {
+  border-right: 2px solid #FFF;
+}
+
+#bSomos {
+  text-align: center;
+  width: 70px;
+  padding: 0px 10px;
+}
+
+#bSomos:hover~#linea-menu {
+  width: 70px !important;
+  left: 10px !important;
+}
+
+#bProducto {
+  text-align: center;
+  width: 120px;
+  padding: 0px 10px;
+}
+
+#bProducto:hover~#linea-menu {
+  width: 120px !important;
+  left: 100px !important;
+}
+
+#bReceta {
+  text-align: left;
+  margin-left: 10px;
+  width: 160px;
+  padding: 0px 10px;
+}
+
+#bReceta:hover~#linea-menu {
+  width: 100px !important;
+  left: 240px !important;
+}
+
+#bContacto {
+  text-align: center;
+  width: 110px;
+  padding: 0px 10px;
+}
+
+#bContacto:hover~#linea-menu {
+  width: 110px !important;
+  left: 430px !important;
+}
+
+#linea-menu {
+  background: #92D30B;
+  height: 3px;
+  left: -10px;
+  position: absolute;
+  bottom: 2px;
+  width: 0px;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+#linea-menu:hover {
+  -moz-transition-duration: 3000s;
+  -ms-transition-duration: 3000s;
+  -o-transition-duration: 3000s;
+  -webkit-transition-duration: 3000s;
+  transition-duration: 3000s;
+}
+
+.lineac-menu {
+  width: 90px;
+  height: 2px;
+  background: #FFF;
+  position: absolute;
+  top: 8px;
+  left: 340px;
+}
+
+.logo-head {
+  position: absolute;
+  display: none;
+  height: 30px;
+  position: absolute;
+  left: 40px;
+  top: 15px;
+  cursor: pointer;
+}
+
+#home {
+  width: 100%;
+  height: 150vh;
+  position: relative;
+  background: url(img/home.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 60px;
+}
+
+.logo-home {
+  width: 40%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 120px;
+}
+
+.lechuga {
+  width: 25%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 5vh;
+}
+
+#nosotros {
+  width: 100%;
+  height: 85vh;
+  background: url(img/nosotros.png);
+  background-size: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.titulo {
+  font-family: blacksword;
+  font-size: 72px;
+}
+
+.texto-n {
+  font-family: g-light;
+  font-size: 48px;
+  color: #FFF;
+}
+
+#productos {
+  width: 100%;
+  height: 80vh;
+  padding: 10px 0px;
+  text-align: center;
+  background: url(img/fondo-productos.png);
+  background-size: 100%;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+}
+
+#sldesc {
+  min-height: 190px;
+}
+
+.contenedor {
+  width: 90%;
+  display: inline-block;
+  position: relative;
+  text-align: right;
+}
+
+.left-p, .right-p {
+  width: 43%;
+  padding: 1%;
+  display: table-cell;
+  margin: 0;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.left-p {
+  text-align: center;
+}
+
+.dots {
+  width: 8%;
+  padding: 1%;
+  display: table-cell;
+  position: relative;
+}
+
+.div-titulo {
+  width: 100%;
+  padding: 10px 0px;
+}
+
+.div-borde-bottom {
+  width: 100%;
+  padding: 25px 0px;
+  border-bottom: 2px solid #92D30B;
+}
+
+.subtitulo {
+  font-family: g-light;
+  font-size: 38px;
+}
+
+.texto-p {
+  font-size: 20px;
+  font-family: r-condensed;
+  color: #1D3A28;
+  text-align: justify;
+}
+
+.tabla-marcas {
+  border-collapse: collapse;
+  margin-left: 25px;
+}
+
+.tabla-marcas td {
+  width: 50px;
+  padding: 15px;
+}
+
+.tabla-marcas td img {
+  height: 50px;
+}
+
+.img-slider {
+  width: 100%;
+}
+
+.tabla-dots {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 25%;
+  bottom: 0;
+}
+
+.tabla-dots td, .dots-receta td {
+  min-width: 30px;
+  min-height: 30px;
+  font-family: heavy;
+  font-size: 32px;
+  color: #92D30B;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.margin-bottom {
+  margin-bottom: 5px;
+}
+
+#srnumb {
+  margin-right: 15px;
+}
+
+.active-dot {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  cursor: pointer;
+  background: url(img/active-dot.svg) !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  cursor: pointer;
+  background: url(img/default-dot.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.dot:hover {
+  background: url(img/active-dot.svg);
+}
+
+#recetas {
+  width: 100%;
+  height: 90vh;
+  background: #1d3a28;
+  text-align: right;
+  position: relative;
+}
+
+#ingred {
+  margin-top: 50px;
+}
+
+.titulo-r {
+  position: relative;
+  height: 120px;
+}
+
+.t-abs {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+
+.contenedor-r {
+  width: 94%;
+  display: table;
+  margin-left: 5%;
+}
+
+.cell-mr {
+  width: 27%;
+  display: table-cell;
+  padding: 1%;
+  text-align: left;
+  position: relative;
+  vertical-align: top;
+}
+
+.titulo-receta {
+  font-size: 24px;
+  color: #FFF;
+  font-family: r-condensed;
+  min-height: 60px;
+}
+
+.lista-r {
+  font-size: 20px;
+  font-family: r-condensed;
+  color: #FFF;
+}
+
+.lista-r li {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.lista-r li:before {
+  content: "- ";
+}
+
+.sig-r {
+  font-family: g-medium;
+  color: #FFF;
+  font-size: 22px;
+}
+
+.img-siguiente-r {
+  width: 50px;
+  position: absolute;
+  top: 5px;
+  right: 150px;
+}
+
+.cell-gr {
+  width: 44%;
+  padding: 1%;
+  display: table-cell;
+  position: relative;
+}
+
+.img-receta {
+  width: 99%;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+}
+
+#soriana {
+  width: 100%;
+  height: 150vh;
+  background: url(img/recetas.png);
+  background-color: #1d3a28;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.img-soriana {
+  width: 25%;
+  position: absolute;
+  bottom: 50px;
+  left: 4%;
+}
+
+.div-text-soriana {
+  position: absolute;
+  padding: 1%;
+  width: 22%;
+  font-family: r-condensed;
+  font-size: 28px;
+  color: #FFF;
+  background: #1D3A28;
+  border-radius: 0px 50px 50px 0px;
+  bottom: 250px;
+}
+
+.hojas {
+  width: 15%;
+  position: absolute;
+  max-width: 166px;
+  top: 100vh;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: none;
+  z-index: 10;
+}
+
+.fin {
+  top: 95vh;
+}
+
+.animation {
+  animation: hojas 7s linear;
+}
+
+@keyframes hojas {
+  0% {
+    transform: rotate(-10deg);
+    top: 66vh;
+  }
+
+  25% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  75% {
+    transform: rotate(0deg);
+  }
+
+  85% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+    top: 100vh;
+  }
+}
+
+#contacto {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+}
+
+.fondo-c {
+  width: 100%;
+  height: 30px;
+  background: #92D30B;
+  position: absolute;
+  bottom: 0;
+}
+
+.contenedor-c {
+  width: 70%;
+  padding-top: 60px;
+  display: inline-block;
+}
+
+.input-text {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #92D30B;
+  font-family: g-light;
+  font-size: 24px;
+  color: #1D3A28;
+  padding: 5px 0px;
+  text-align: center;
+}
+
+.text-area {
+  resize: none;
+  height: 200px;
+}
+
+::placeholder {
+  color: #1D3A28;
+}
+
+.buttonC {
+  color: #FFF;
+  padding: 15px 20px;
+  background: #92D30B;
+  border: 0;
+  border-radius: 25px;
+  font-size: 20px;
+  font-family: r-condensed;
+  cursor: pointer;
+  border: 2px solid #92D30B;
+}
+
+.buttonC:hover {
+  background: #FFF;
+  color: #92D30B;
+}
+
+.buttonC:active {
+  transform: translateY(2px);
+}
+
+.buttonC:disabled {
+  opacity: 0.5;
+}
+
+.text-c {
+  font-size: 24px;
+  color: #1D3A28;
+  font-family: g-light;
+}
+
+.texto-f {
+  font-size: 14px;
+  color: #1D3A28;
+  font-family: r-condensed;
+}
+
+.tenedor {
+  width: 30%;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  z-index: -1;
+}
+
+.msgError {
+  color: red;
+  font-size: 12px;
+  font-family: r-condensed;
+}
+
+.success {
+  width: 100% !important;
+  min-height: 60vh !important;
+  font-family: r-condensed;
+  font-size: 48px;
+  text-align: center;
+  vertical-align: middle;
+  color: #1D3A28;
+}
+
+.titulo-movil {
+  display: none;
+}
+
+.titulo-web {
+  display: block;
+}
+
+.dots-movil, .web-br {
+  display: none;
+}
+
+.tel {
+  text-decoration: none;
+  color: #1D3A28;
+}
+
+.tel:hover {
+  font-family: g-medium;
+}
+
+@media(max-width:1280px) {
+  #menu-sliders {
+    width: 50%;
+  }
+
+  .titulo {
+    font-size: 60px;
+  }
+
+  .texto-n {
+    font-size: 30px;
+  }
+
+  #nosotros {
+    height: 80vh;
+  }
+
+  #productos {
+    height: 120vh;
+  }
+
+  .subtitulo {
+    font-size: 32px;
+  }
+
+  .texto-p {
+    font-size: 16px;
+  }
+
+  .tabla-marcas {
+    margin-left: 50px;
+    border-collapse: collapse;
+  }
+
+  .tabla-marcas td {
+    width: 50px;
+  }
+
+  .tabla-marcas td img {
+    height: 40px;
+  }
+
+  .left-p {
+    vertical-align: bottom;
+  }
+
+  .img-slider {
+    width: unset;
+    height: 540px;
+    margin-bottom: 30px;
+  }
+
+  #recetas {
+    height: 120vh;
+  }
+
+  .img-siguiente-r {
+    right: 35px;
+    top: 0;
+  }
+
+  .lista-r {
+    font-size: 18px;
+  }
+
+  .div-text-soriana {
+    font-size: 24px;
+  }
+
+  .img-soriana {
+    width: 35%;
+  }
+
+  #contacto {
+    height: 135vh;
+  }
+
+  .hojas {
+    top: 120vh;
+  }
+
+  @keyframes hojas {
+    0% {
+      transform: rotate(-10deg);
+      top: 100vh;
+    }
+
+    25% {
+      transform: rotate(0deg);
+    }
+
+    50% {
+      transform: rotate(10deg);
+    }
+
+    75% {
+      transform: rotate(0deg);
+    }
+
+    85% {
+      transform: rotate(-10deg);
+    }
+
+    100% {
+      transform: rotate(0deg);
+      top: 120vh;
+    }
+  }
+}
+
+@media(max-width:980px) {
+  header {
+    display: none;
+  }
+
+  #menu-sliders {
+    display: none;
+  }
+
+  .frescura {
+    width: 80%;
+  }
+
+  /* Menú movil */
+  .container {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .bar1, .bar2, .bar3 {
+    width: 22px;
+    height: 3px;
+    background-color: #FFF;
+    margin: 3px 0;
+    transition: 0.4s;
+  }
+
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-4px, 3px);
+    transform: rotate(-45deg) translate(-4px, 3px);
+  }
+
+  .change .bar2 {
+    opacity: 0;
+  }
+
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-5px, -5px);
+    transform: rotate(45deg) translate(-5px, -5px);
+  }
+
+  .btnMovil {
+    font-size: 16px;
+    font-family: g-medium;
+    color: #FFF;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  /* Menú móvil */
+  #menuMovil {
+    display: block;
+  }
+
+  .logo-home {
+    width: 80%;
+  }
+
+  .lechuga {
+    width: 60%;
+    bottom: 0;
+  }
+
+  #nosotros {
+    background-position: bottom;
+    background-color: #64d000;
+    padding-top: 60px;
+  }
+
+  .texto-n {
+    font-size: 24px;
+    padding: 3%;
+  }
+
+  #productos {
+    height: auto;
+    padding-bottom: 50px;
+    margin-top: -3px;
+  }
+
+  .dots {
+    width: 18%;
+  }
+
+  .tabla-dots {
+    top: 5%;
+  }
+
+  .left-p {
+    width: 58%;
+  }
+
+  .img-slider {
+    width: 100%;
+    height: auto;
+  }
+
+  .right-p {
+    width: 98%;
+    display: inline-block;
+  }
+
+  .titulo-movil {
+    display: block;
+  }
+
+  .titulo-web {
+    display: none;
+  }
+
+  .subtitulo {
+    font-size: 18px;
+  }
+
+  .tabla-marcas {
+    margin-left: 0;
+  }
+
+  .tabla-marcas td {
+    padding: 10px;
+  }
+
+  .tabla-marcas td img {
+    height: 30px;
+  }
+
+  #recetas {
+    height: auto;
+    text-align: center;
+  }
+
+  .hojas {
+    width: 35%;
+    top: unset;
+    bottom: -150px;
+  }
+
+  @keyframes hojas {
+    0% {
+      transform: rotate(-10deg);
+      bottom: 100vh;
+    }
+
+    25% {
+      transform: rotate(0deg);
+    }
+
+    50% {
+      transform: rotate(10deg);
+    }
+
+    75% {
+      transform: rotate(0deg);
+    }
+
+    85% {
+      transform: rotate(-10deg);
+    }
+
+    100% {
+      transform: rotate(0deg);
+      bottom: -150px;
+    }
+  }
+
+  .contenedor-r {
+    width: 94%;
+    margin: unset;
+    display: inline-block;
+  }
+
+  .cell-mr, .cell-gr {
+    width: 98%;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  .img-receta {
+    position: unset;
+    display: inline-block;
+  }
+
+  .dots-movil {
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+
+  .dots-web {
+    display: none;
+  }
+
+  .t-abs {
+    width: 200px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .titulo-receta {
+    min-height: 30px;
+    font-size: 20px;
+  }
+
+  .lista-r {
+    font-size: 16px;
+  }
+
+  #soriana {
+    height: 390px;
+    background-size: 100% 100%;
+    background-position: top;
+  }
+
+  .movil-sor {
+    width: 100%;
+    height: 80px;
+    background: #FFF;
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+  }
+
+  .div-text-soriana {
+    width: 50%;
+    font-size: 16px;
+    bottom: 80px;
+    z-index: 2;
+  }
+
+  .img-soriana {
+    bottom: 0;
+  }
+
+  .input-text {
+    font-size: 16px;
+  }
+
+  #contacto {
+    height: auto;
+    padding-bottom: 160px;
+  }
+
+  .text-c {
+    font-size: 16px;
+  }
+
+  .contenedor-c {
+    width: 96%;
+  }
+
+  .web-br {
+    display: block;
+  }
+
+  .texto-f {
+    margin-bottom: 15px;
+  }
+
+  .success {
+    font-size: 24px;
+  }
+}

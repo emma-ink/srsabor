@@ -344,6 +344,19 @@
 <section id="home">
   <img src="img/logo.svg" class="logo-home" />
   <img src="img/lechuga.png" class="lechuga" id="lechuga"/>
+  <?php if($_COOKIE["sr_cookies"] != "ok"){ ?>
+  <div class="cookies">
+    <div class="cookie-text">
+      <span class="sub-cookie">ESTA PÁGINA WEB USA COOKIES</span>
+      <p class="p-cookie">Las cookies de este sitio web se usan para personalizar el contenido y los anuncios, ofrecer funciones de redes sociales y analizar el tráfico. Además, compartimos información sobre el uso que haga del sitio web con nuestros partners de redes sociales, publicidad y análisis web, quienes pueden combinarla con otra información que les haya proporcionado o que hayan recopilado a partir del uso que haya hecho de sus servicios. Usted acepta nuestras cookies si continúa utilizando nuestro sitio web.</p>
+    </div>
+    <div class="cookie-button">
+      <a href="cookies.php?acp=ok&url=<?php echo $_SERVER['REQUEST_URI'];?>" class="cButton">
+        Aceptar 
+      </a>
+    </div>
+  </div>
+<?php } ?>
 </section>
 <section id="nosotros">
   <div class="titulo" style="color:#FFF">
@@ -506,7 +519,7 @@
     <span class="text-c">Tel: <a href="tel:4484360071" class="tel">(448) 436 0071</a> / <a href="tel:4422488646" class="tel">(442) 248 8646</a></span><br />
     <div class="input-text" style="width:250px;height:25px;display:inline-block"></div><br />
     <br /><br />
-    <span class="texto-f">Copyright © <?php echo date('Y') ?> SEÑOR SABOR <br class="web-br"/>      Desarrollado por INK    /      AVISO DE PRIVACIDAD</span>
+    <span class="texto-f">Copyright © <?php echo date('Y') ?> SEÑOR SABOR <br class="web-br"/>      Desarrollado por INK    /      <a class="aviso-a" href="aviso.php">AVISO DE PRIVACIDAD</a></span>
     <img class="tenedor" src="img/tenedor.jpg" />
   </div>
   <div class="fondo-c"></div>

@@ -226,6 +226,65 @@ header {
   bottom: 5vh;
 }
 
+.cookies {
+  width: 96%;
+  padding: 1% 2%;
+  background: rgba(100, 208, 0, 0.9);
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+  font-family: r-condensed;
+  display: table;
+}
+
+.cookie-text {
+  width: 80%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: justify;
+  color: #FFF;
+}
+
+.cookie-button {
+  width: 20%;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.cButton {
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 2px solid #64d000;
+  min-width: 1 50px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  color: #64d000;
+  background-color: #FFF;
+}
+
+.cButton:hover {
+  background-color: #64d000;
+  color: #FFF;
+  border: 2px solid #FFF;
+}
+
+.cButton:active {
+  transform: translateY(2px);
+}
+
+.sub-cookie {
+  font-size: 24px;
+  font-family: r-condensed;
+}
+
+.p-cookie {
+  font-size: 16px;
+  font-family: r-condensed;
+}
+
 #nosotros {
   width: 100%;
   height: 85vh;
@@ -672,6 +731,114 @@ header {
   font-family: g-medium;
 }
 
+#head-aviso {
+  width: 100%;
+  height: 190px;
+  margin-top: 60px;
+  background: url(img/fondo-productos.png);
+  background-position: bottom;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #1B5A7D;
+}
+
+#aviso {
+  width: 100%;
+  padding-top: 20px;
+  background: #1d3a28;
+  height: auto;
+  text-align: center;
+  position: relative;
+}
+
+.contenedor-a {
+  width: 90%;
+  display: inline-block;
+}
+
+.logo-aviso {
+  width: 30%;
+  margin-bottom: 70px;
+}
+
+.titulo-aviso {
+  font-size: 52px;
+  font-family: r-condensed;
+  color: #FFF;
+}
+
+.subtitulo-aviso {
+  font-size: 36px;
+  font-family: r-condensed;
+  color: #FFF;
+}
+
+.texto-a, .lista-ordenada {
+  font-size: 28px;
+  font-family: r-condensed;
+  color: #FFF;
+  margin: 30px 0px;
+}
+
+.lista-ordenada {
+  padding: 0px 50px;
+  list-style: lower-alpha;
+}
+
+.aviso-a {
+  color: #1d3a28;
+  text-decoration: none;
+}
+
+.aviso-a:hover {
+  font-family: r-condensed;
+  color: #1d3a28;
+  font-weight: bold;
+}
+
+.a-hojas {
+  width: 15%;
+  position: absolute;
+  max-width: 166px;
+  top: 100px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 10;
+}
+
+.animation-a {
+  animation: hojas-a 7s linear;
+}
+
+@keyframes hojas-a {
+  0% {
+    transform: rotate(-10deg);
+    top: -400px;
+  }
+
+  25% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  75% {
+    transform: rotate(0deg);
+  }
+
+  85% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+    top: 100px;
+  }
+}
+
 @media(max-width:1280px) {
   #menu-sliders {
     width: 50%;
@@ -1042,5 +1209,58 @@ header {
 
   .success {
     font-size: 24px;
+  }
+
+  #head-aviso {
+    height: 60px;
+    background-color: #174a67;
+  }
+
+  .logo-aviso {
+    width: 80%;
+  }
+
+  .titulo-aviso {
+    font-size: 32px;
+  }
+
+  .subtitulo-aviso {
+    font-size: 20px;
+  }
+
+  .texto-a, .lista-ordenada {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .lista-ordenada {
+    padding: 0px 20px;
+  }
+
+  .cookies {
+    display: inline-block;
+  }
+
+  .cookie-text {
+    width: 98%;
+    display: inline-block;
+    text-align: justify;
+    color: #FFF;
+    padding: 1%;
+  }
+
+  .cookie-button {
+    width: 98%;
+    padding: 2% 1%;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .sub-cookie {
+    font-size: 16px;
+  }
+
+  .p-cookie {
+    font-size: 12px;
   }
 }

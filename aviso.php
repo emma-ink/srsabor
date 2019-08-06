@@ -65,14 +65,6 @@
       document.getElementById("logo-ss").style.display = "none";
       $('#hojas').fadeOut('slow');
     }
-
-    // if(sc > hojas){
-    //   $('#hojas').fadeIn('slow');
-    //   $('#hojas').addClass('animation');
-    //
-    //   $('#hojas').fadeOut('slow');
-    // }else{
-    // }
   }
 
   function myFunction(x) {
